@@ -9,4 +9,3 @@ def splitInteger(num,parts):
 
     return sorted(array)
 
-print(splitInteger(20,6))
