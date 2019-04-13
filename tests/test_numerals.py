@@ -2,13 +2,12 @@ import unittest
 from code.numerals import roman_converter
 
 class NumeralTests(unittest.TestCase):
-    def test_one(self):
-        roman_numeral = roman_converter(1)
-        self.assertEqual(roman_numeral, 'I')
+    def test_I(self):
+        roman_I = roman_converter(1)
+        roman_II = roman_converter(2)
 
-    def test_two(self):
-        roman = roman_converter(2)
-        self.assertEqual(roman, 'II')
+        self.assertEqual(roman_I, 'I') 
+        self.assertEqual(roman_II, 'II') 
 
 if __name__ == '__main__':
     unittest.main()
